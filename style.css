@@ -1,12 +1,12 @@
 @font-face{
     font-family: 'Biorhyme';
-    src: local('Biorhyme'), url(/source/biorhyme/biorhyme/BioRhyme-Regular.ttf);
+    src: local('Biorhyme'), url(source/biorhyme/biorhyme/BioRhyme-Regular.ttf);
     
 }
 
 @font-face{
     font-family: 'Roxie Rossa';
-    src: local('Roxie Rossa'), url(/source/roxie_rossa/Roxie-rossa.ttf);
+    src: local('Roxie Rossa'), url(source/roxie_rossa/Roxie-rossa.ttf);
     
 }
 
