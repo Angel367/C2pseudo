@@ -4,7 +4,7 @@ document.body.onclick = function (e) {
         let inpData = document.getElementById("input").value;
         inpData = inpData.replaceAll("int", "ЦЕЛ");
         inpData = inpData.replaceAll("if", "ЕСЛИ");
-        //console.log(inpData);
+        inpData = inpData.replaceAll("else", "ИНАЧЕ");
         document.getElementById("output").value = inpData;
     }
 }
