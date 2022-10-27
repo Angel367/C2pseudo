@@ -18,6 +18,8 @@ document.body.onclick = function (e) {
         inpData = inpData.replaceAll("while", "ПОКА");
         inpData = inpData.replaceAll("do", "ДЕЛ");
         // Отдельные символы
+        inpData = inpData.replaceAll("!=", "НЕ РАВНО");
+        inpData = inpData.replaceAll("==", "РАВНО");
         inpData = inpData.replaceAll(">", "БОЛЬШЕ");
         inpData = inpData.replaceAll(">=", "БОЛЬШЕ ИЛИ РАВНО");
         inpData = inpData.replaceAll("<", "МЕНЬШЕ");
@@ -25,6 +27,12 @@ document.body.onclick = function (e) {
         inpData = inpData.replaceAll("=", "←");
         // Какие-то операторы
         inpData = inpData.replaceAll("return", "ВЕРНУТЬ");
+        inpData = inpData.replaceAll("cout", "ВЫВОД");
+        // Обработка ошибок
+        inpData = inpData.replaceAll("МЕНЬШЕМЕНЬШЕ", "<<");
+        inpData = inpData.replaceAll("БОЛЬШЕБОЛЬШЕ", ">>");
+        inpData = inpData.replaceAll("-БОЛЬШЕ", "->");
+
         document.getElementById("output").value = inpData;
     }
 }
